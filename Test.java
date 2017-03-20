@@ -1,7 +1,5 @@
-/**
- * Simple HTTP handler for testing ChronoTimer
+/** * Simple HTTP handler for testing ChronoTimer
  */
-package com.example;
 
 import java.io.IOException;
 import java.io.InputStream;

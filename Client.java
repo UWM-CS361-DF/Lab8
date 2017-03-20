@@ -3,12 +3,8 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.Scanner;
 
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 
 public class Client {
 
@@ -57,11 +53,11 @@ public class Client {
 
 	private static String getJSON() {
 
-		ArrayList<Employee> em = new ArrayList<>();
+		ArrayList<Employee> em = new ArrayList<Employee>();
 		em.add(new Employee("Katie", "Krowsky", "Computer Science", "1"));
 		em.add(new Employee("Justin", "Jacobson", "Computer Science", "2"));
 		em.add(new Employee("Junichi", "Iida", "Baz", "3"));
-		em.add(new Employee("shuxin", "Dong", "Disney Animals", "4"));
+		em.add(new Employee("Shuxin", "Dong", "Disney Animals", "4"));
 		Gson g = new Gson();
 		String json = g.toJson(em);
 		return json;
